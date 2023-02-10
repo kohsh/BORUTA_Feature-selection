@@ -66,7 +66,6 @@ saveRDS(covar_genes, "ml_regression_input_full_cohort.rds")
 | ENST00000450305.2  | 1.2187  | 1.39157 |  3.47069  | 0.0013632| 0.0355961| 0.0544532|
 
 
-
 ```R
 
 # balanced sub cohort for machine learning classification
@@ -104,7 +103,7 @@ boruta_model_feature_rank <- sort(sapply(k,median))
 write.csv(boruta_model_feature_rank,file="boruta_model_feature_rank.csv")
 ```
 
-### Input data format
+### Onput data format
 
 | ensembl_transcript_id | Z.score | 
 | ------------- | ------------- |
