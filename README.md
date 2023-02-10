@@ -57,6 +57,9 @@ covar_genes <- cbind(datExpr, ml_covar)
 
 # save full cohort with covariate columns for machine learning regression
 saveRDS(covar_genes, "ml_regression_input_full_cohort.rds")
+```
+
+```R
 
 # balanced sub cohort for machine learning classification
 set.seed(123)
@@ -91,7 +94,9 @@ k <-lapply(1:ncol(boruta_model$ImpHistory),function(i)
 names(k) <- colnames(boruta_model$ImpHistory)
 boruta_model_feature_rank <- sort(sapply(k,median))
 write.csv(boruta_model_feature_rank,file="boruta_model_feature_rank.csv")
+```
 
+```R
 
 # Stack-plot for max-Zscores
 setwd(path.expand("/home/STACK-plot") )
