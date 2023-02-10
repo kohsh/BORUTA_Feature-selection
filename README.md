@@ -116,7 +116,7 @@ write.csv(boruta_model_feature_rank,file="boruta_model_feature_rank.csv")
 
 # Stack-plot for max-Zscores
 setwd(path.expand("/home/STACK-plot") )
-ENR <- read.delim("list-ad-ctrl.txt", header=TRUE, fill = TRUE)
+ENR <- read.delim("boruta_model_feature_rank.txt", header=TRUE, fill = TRUE)
 ggplot(ENR, aes(x=hgnc_symbol, y=Z_Score, fill=Contrast)) + geom_bar(stat='identity') +
     coord_flip() +
     scale_fill_brewer(palette="Paired") +
@@ -125,4 +125,7 @@ theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_bl
 panel.grid.minor = element_blank())
 ggsave("AD-Ctrl.eps")
 ```
+
+![AD-vs-Ctrl](https://user-images.githubusercontent.com/46553150/217999540-b0fb3dd7-6444-4b4d-8906-3e439b2f2feb.png)
+
 
