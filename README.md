@@ -58,6 +58,7 @@ covar_genes <- cbind(datExpr, ml_covar)
 # save full cohort with covariate columns for machine learning regression
 saveRDS(covar_genes, "ml_regression_input_full_cohort.rds")
 ```
+### Input data format
 
 |   | AD01 | AD02 | AD03 | Ctrl01 | Ctrl02 |Ctrl03 |
 | ------------- | ------------- |------------- |------------- |------------- |------------- |------------- |
