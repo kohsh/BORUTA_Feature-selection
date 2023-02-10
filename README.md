@@ -125,6 +125,8 @@ panel.grid.minor = element_blank())
 ggsave("AD-Ctrl.eps")
 ```
 
+### Z.score stack-plot
+
 ![AD-vs-Ctrl](https://user-images.githubusercontent.com/46553150/218000536-adf416bf-cc60-4f4e-9ffa-3abb9ebfacca.png)
 
 
