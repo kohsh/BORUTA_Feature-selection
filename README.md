@@ -126,8 +126,6 @@ panel.grid.minor = element_blank())
 ggsave("AD-Ctrl.eps")
 ```
 
+![AD-vs-Ctrl](https://user-images.githubusercontent.com/46553150/218000536-adf416bf-cc60-4f4e-9ffa-3abb9ebfacca.png)
 
-```png
-![AD-vs-Ctrl](https://user-images.githubusercontent.com/46553150/217999540-b0fb3dd7-6444-4b4d-8906-3e439b2f2feb.png)
-```
 
