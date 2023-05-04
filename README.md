@@ -57,6 +57,10 @@ covar_genes <- cbind(datExpr, ml_covar)
 # save full cohort with covariate columns for machine learning regression
 saveRDS(covar_genes, "ml_regression_input_full_cohort.rds")
 ```
+<details>
+
+<summary>Tips for collapsed sections</summary>
+
 ### Input data format
 
 |   | AD01 | AD02 | AD03 | Ctrl01 | Ctrl02 |Ctrl03 |
@@ -64,7 +68,8 @@ saveRDS(covar_genes, "ml_regression_input_full_cohort.rds")
 | ENST00000456328.2  | 7.85718  | 3.52895 | 2.15625 |0 | 0| 0.466484 |
 | ENST00000450305.2  | 1.2187  | 1.39157 |  3.47069  | 0.0013632| 0.0355961| 0.0544532|
 
-
+<details>
+ 
 ```R
 
 # balanced sub cohort for machine learning classification
